@@ -18,7 +18,7 @@ flowchart LR
 
 ## Live app
 
-Placeholder until the dashboard is deployed: `https://your-app.vercel.app`
+https://agentpay-nine-eta.vercel.app
 
 ## Contract
 
