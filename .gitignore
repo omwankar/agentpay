@@ -1,0 +1,15 @@
+.env
+.env.*
+.env*
+tools/.env
+tools/agent-wallet.json
+tools/*-wallet.json
+tools/node_modules/
+contracts/.env*
+contracts/out/
+contracts/cache/
+
+!.env.example
+!web/.env.example
+!tools/.env.example
+!contracts/.env.example
