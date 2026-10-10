@@ -184,7 +184,7 @@ export function Dashboard() {
       setOwner(nextOwner);
 
       try {
-        const nextBalance = await client.getBalance({ address: vault });
+        const nextBalance = await client.getBalance({ address: nextOwner });
         if (id !== requestId.current) return;
         setVaultBalance(nextBalance);
       } catch {
@@ -549,7 +549,7 @@ export function Dashboard() {
       <section className="grid grid-cols-1 gap-5 sm:grid-cols-2 xl:grid-cols-4">
         <StatCard
           tone="teal"
-          label="Vault balance"
+          label="Owner balance"
           loading={feedLoading}
           value={vaultBalance === null ? "—" : formatMon(vaultBalance)}
           unit="MON"
